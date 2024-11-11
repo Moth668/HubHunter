@@ -19,7 +19,7 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="'/SavedCandidates'">Potential Candidates</Link>
+          <Link to="/SavedCandidates">Potential Candidates</Link>
         </li>
       </ul>
     </nav>
