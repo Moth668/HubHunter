@@ -98,7 +98,7 @@ const CandidateSearch = () => {
       )}
 
       {/* Button to navigate to Potential Candidates page */}
-      <button onClick={goToSavedCandidates}>View Saved Candidates</button>
+      <button onClick={goToSavedCandidates}>View Potential Candidates</button>
     </div>
   );
 };
