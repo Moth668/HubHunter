@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { searchGithub, searchGithubUser } from '../api/API';
 import { Candidate } from '../interfaces/Candidate.interface';
 import { useNavigate } from 'react-router-dom';
@@ -10,14 +10,14 @@ const CandidateSearch = () => {
   const navigate = useNavigate();
 
   // Function to fetch a random candidate
-  const fetchRandomCandidate = async () => {
-    const randomStart = Math.floor(Math.random() * 100000000) + 1;
-    const candidates = await searchGithub(randomStart);
-    if (candidates.length > 0) {
-      const detailedCandidate = await searchGithubUser(candidates[0].login);
-      setCandidate(detailedCandidate);
-    }
-  };
+const fetchRandomCandidate = async () => {
+  const candidates = await searchGithub(); 
+  if (candidates.length > 0) {
+    const detailedCandidate = await searchGithubUser(candidates[0].login);
+    setCandidate(detailedCandidate);
+  }
+};
+
 
   // Function to fetch a specific candidate by username
   const fetchSpecificCandidate = async (username: string) => {

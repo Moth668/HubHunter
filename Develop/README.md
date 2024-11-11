@@ -4,9 +4,8 @@
 
 - an app for searching candidates
 
-# ![Candidate Search screenshot example](src/assets/candidate_search_screenshot_example.png)
-
-# ![Potential Candidate screenshot example](src/assets/potential_candidate_screenshot_example.png)
+![Candidate Search screenshot example](Develop/src/assets/candidate_search_screenshot_example.png)
+![Potential Candidate screenshot example](Develop/src/assets/potential_candidate_screenshot_example.png)
 
 - Leave the search field empty to search for randomly generated GitHub profiles and display their information.
 - Type a specific GitHub Username to reveal that profiles details.
@@ -22,6 +21,7 @@
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Tools](#tools)
+- [Links](#links)
 
 ## User Story
 
@@ -52,19 +52,34 @@ THEN the next candidate's information should be displayed without saving the cur
 ```
 
 ## Tools
+
 These are the tools that I used to create this program.
-* Visual Studio Code
-* Insomnia
-* GitHub 
-* GitHub REST API
-* Typescript
-* Vite
-* ChatGPT
-* Java 
-* bfg repo-cleaner
-* npm
-* React
-* React Router
-* ESLint
-* .env
-* JSX
+
+- Visual Studio Code
+- Insomnia
+- GitHub
+- GitHub REST API
+- Typescript
+- Vite
+- ChatGPT
+- Java
+- bfg repo-cleaner
+- npm
+- React
+- React Router
+- ESLint
+- .env
+- JSX
+- HTML
+- CSS
+- Render
+- Git Bash
+- Starter Files from bootcamp
+- Copilot
+- VS Code Extensions: (Prettier, ESLint)
+
+## Links
+
+- Here is the link to my GitHub Repository:
+
+- Here is the link to my Deployed Application:
