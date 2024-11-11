@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 .env
+Develop/environment/.env
 
 
 # Editor directories and files

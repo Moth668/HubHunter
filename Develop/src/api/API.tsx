@@ -1,4 +1,6 @@
-const searchGithub = async () => {
+import Candidate from "../interfaces/Candidate.interface";
+
+const searchGithub = async (): Promise<Candidate[]> => {
   try {
     const start = Math.floor(Math.random() * 100000000) + 1;
     // console.log(import.meta.env);
@@ -10,10 +12,11 @@ const searchGithub = async () => {
         },
       }
     );
-    // console.log('Response:', response);
-    const data = await response.json();
+    // console.log(import.meta.env.VITE_GITHUB_TOKEN);
+
+    const data: Candidate[] = await response.json();
     if (!response.ok) {
-      throw new Error('invalid API response, check the network tab');
+      throw new Error("invalid API response, check the network tab");
     }
     // console.log('Data:', data);
     return data;
@@ -30,9 +33,9 @@ const searchGithubUser = async (username: string) => {
         Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
       },
     });
-    const data = await response.json();
+    const data: Candidate = await response.json();
     if (!response.ok) {
-      throw new Error('invalid API response, check the network tab');
+      throw new Error("invalid API response, check the network tab");
     }
     return data;
   } catch (err) {
