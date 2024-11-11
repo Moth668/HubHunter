@@ -4,8 +4,8 @@
 
 - an app for searching candidates
 
-![Candidate Search screenshot example](src/assets/candidate_search_screenshot_example.png)
-![Potential Candidate screenshot example](src/assets/potential_candidate_screenshot_example.png)
+![Candidate Search screenshot example](Develop/src/assets/candidate_search_screenshot_example.png)
+![Potential Candidate screenshot example](Develop/src/assets/potential_candidate_screenshot_example.png)
 
 - Leave the search field empty to search for randomly generated GitHub profiles and display their information.
 - Type a specific GitHub Username to reveal that profiles details.
