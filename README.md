@@ -4,10 +4,6 @@
 
 - an app for searching candidates
 
-# ![Candidate Search screenshot example](image-2.png)
-
-# ![Potential Candidate screenshot example](image-1.png)
-
 - Leave the search field empty to search for randomly generated GitHub profiles and display their information.
 - Type a specific GitHub Username to reveal that profiles details.
 - Click the green button to save the profile.
@@ -52,19 +48,35 @@ THEN the next candidate's information should be displayed without saving the cur
 ```
 
 ## Tools
+
 These are the tools that I used to create this program.
-* Visual Studio Code
-* Insomnia
-* GitHub 
-* GitHub REST API
-* Typescript
-* Vite
-* ChatGPT
-* Java 
-* bfg repo-cleaner
-* npm
-* React
-* React Router
-* ESLint
-* .env
-* JSX
+
+- Visual Studio Code
+- Insomnia
+- GitHub
+- GitHub REST API
+- Typescript
+- Vite
+- ChatGPT
+- Java
+- bfg repo-cleaner
+- npm
+- React
+- React Router
+- ESLint
+- .env
+- JSX
+- HTML
+- CSS
+- Render
+- Git Bash
+- Starter Files from bootcamp
+- Copilot
+- VS Code Extensions: (Prettier, ESLint)
+
+## Links
+
+- Here is the link to my GitHub Repository:
+
+- Here is the link to my Deployed Application:
+

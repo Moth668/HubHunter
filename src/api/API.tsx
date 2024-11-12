@@ -1,46 +1,45 @@
-import Candidate from "../interfaces/Candidate.interface";
+import { Candidate } from "../interfaces/Candidate.interface";
 
+// Function to fetch a list of random users from GitHub
 const searchGithub = async (): Promise<Candidate[]> => {
   try {
     const start = Math.floor(Math.random() * 100000000) + 1;
-    // console.log(import.meta.env);
-    const response = await fetch(
-      `https://api.github.com/users?since=${start}`,
-      {
-        headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-        },
-      }
-    );
-    // console.log(import.meta.env.VITE_GITHUB_TOKEN);
+    const response = await fetch(`https://api.github.com/users?since=${start}`, {
+      headers: {
+        Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("Invalid API response, check the network tab");
+    }
 
     const data: Candidate[] = await response.json();
-    if (!response.ok) {
-      throw new Error("invalid API response, check the network tab");
-    }
-    // console.log('Data:', data);
     return data;
   } catch (err) {
-    // console.log('an error occurred', err);
-    return [];
+    console.error("An error occurred:", err);
+    return []; // Return an empty array on error
   }
 };
 
-const searchGithubUser = async (username: string) => {
+// Function to fetch a specific user by username
+const searchGithubUser = async (username: string): Promise<Candidate | null> => {
   try {
     const response = await fetch(`https://api.github.com/users/${username}`, {
       headers: {
         Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
       },
     });
-    const data: Candidate = await response.json();
+
     if (!response.ok) {
-      throw new Error("invalid API response, check the network tab");
+      throw new Error("Invalid API response, check the network tab");
     }
+
+    const data: Candidate = await response.json();
     return data;
   } catch (err) {
-    // console.log('an error occurred', err);
-    return {};
+    console.error("An error occurred:", err);
+    return null; // Return null on error
   }
 };
 
