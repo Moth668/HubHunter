@@ -76,7 +76,6 @@ These are the tools that I used to create this program.
 
 ## Links
 
-- Here is the link to my GitHub Repository:
+- Here is the link to my GitHub Repository: https://github.com/Moth668/HubHunter
 
-- Here is the link to my Deployed Application:
-
+- Here is the link to my Deployed Application: https://hubhunter-1.onrender.com
